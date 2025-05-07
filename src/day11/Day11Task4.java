@@ -2,20 +2,19 @@ package day11;
 
 public class Day11Task4 {
 
-	class Account 
-	{
+	
 	    private String accountHolderName;
 	    private int accountNumber;
 	    private double balance;
 
-	    public Account() 
+	    public Day11Task4() 
 	    {
-	        this.accountHolderName = "Unknown";
+	        this.accountHolderName = "Jayaram";
 	        this.accountNumber = 0;
 	        this.balance = 0.0;
 	    }
 
-	    public Account(String name, double balance) 
+	    public Day11Task4(String name, double balance) 
 	    {
 	        this.accountHolderName = name;
 	        this.accountNumber = (int)(Math.random() * 10000); 
@@ -59,14 +58,13 @@ public class Day11Task4 {
 	        System.out.println("Account Number: " + accountNumber);
 	        System.out.println("Balance: " + balance);
 	    }
-	}
+	
 
-	public class Main 
-	{
+	
 	    public static void main(String[] args)
 	    {
-	        Account acc1 = new Account(); 
-	        Account acc2 = new Account("Alice", 1000.0);
+	    	Day11Task4 acc1 = new Day11Task4(); 
+	    	Day11Task4 acc2 = new Day11Task4("Alice", 1000.0);
 
 	        System.out.println("Account 1:");
 	        acc1.displayInfo();
@@ -80,6 +78,6 @@ public class Day11Task4 {
 	        acc2.withdraw(1500); 
 	        acc2.checkBalance();
 	    }
-	}
+	
 
 }
